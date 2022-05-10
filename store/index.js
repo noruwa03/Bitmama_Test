@@ -153,14 +153,14 @@ export const useStore = defineStore('store', {
         confirmButtonText: 'Yes',
       }).then((result) => {
         if (result.isConfirmed) {
-          document.cookie = `${key}=${value};expires=Thu, 19 Dec 1920 12:00:00 GMT;`
+          document.cookie = `${key}=${value};domain=bitmama-task.netlify.app;path=/;expires=Thu, 19 Dec 1920 12:00:00 GMT;`
           window.location = '/dashboard'
         }
       })
     },
 
     LOGOUT() {
-      document.cookie = `USERNAME=${COOKIE_APP_KEY.USERNAME};expires=Thu, 19 Dec 1920 12:00:00 GMT;`
+      document.cookie = `USERNAME=${COOKIE_APP_KEY.USERNAME};domain=bitmama-task.netlify.app;path=/;expires=Thu, 19 Dec 1920 12:00:00 GMT;`
       window.location = '/'
 
       Swal.fire({
