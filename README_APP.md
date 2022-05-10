@@ -12,7 +12,6 @@ Pinia Benefits
 -Hot module replacement
 -Modify your stores without reloading your page
 -Keep any existing state while developing
--Plugins: extend Pinia features with plugins
 -Proper TypeScript support or autocompletion for JS users
 -Server Side Rendering Support
 
