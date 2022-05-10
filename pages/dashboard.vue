@@ -24,7 +24,7 @@
       <div class="text-center mt-3 mb-4">
         <h4>Cookie Session Management</h4>
       </div>
-      <div class="row align-items-center justify-content-between">
+      <div class="row align-items-center justify-content-center">
         <div
           v-for="sessions in currentUser.allSessions"
           :key="sessions[0]"
