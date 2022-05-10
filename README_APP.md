@@ -4,12 +4,24 @@ This web app was developed for the Frontend Engineer Test for Bitmama, It is a w
 STATE MANAGEMENT
 Pinia - Pinia is a store library for Vue, it allows you to share a state across components/pages.
 
+Pinia Benefits
+-Devtools support
+-A timeline to track actions, mutations
+-Stores appear in components where they are used
+-Time travel and easier debugging
+-Hot module replacement
+-Modify your stores without reloading your page
+-Keep any existing state while developing
+-Plugins: extend Pinia features with plugins
+-Proper TypeScript support or autocompletion for JS users
+-Server Side Rendering Support
 
 FRAMEWORKS & DEPENDENCIES
+
 - Bootstrap https://getbootstrap.com/
-- Bootstrap Icons https://icons.getbootstrap.com/ 
+- Bootstrap Icons https://icons.getbootstrap.com/
 - SweetAlert2 https://sweetalert2.github.io/
 
-
 CREDITS
+
 - Developed by Obaseki Noruwa https://twitter.com/ObasekiNoruwa
