@@ -142,7 +142,7 @@ export const useStore = defineStore('store', {
         .split(';')
         .map((cookie) => cookie.split('='))
     },
-    DELETE_SESSION(key, value) {
+    DELETE_SESSION(key) {
       Swal.fire({
         title: 'Are you sure?',
         text: "You won't be able to revert this!",
@@ -153,14 +153,14 @@ export const useStore = defineStore('store', {
         confirmButtonText: 'Yes',
       }).then((result) => {
         if (result.isConfirmed) {
-          document.cookie = `${key}=${value};path=/;domain=bitmama-task.netlify.app;expires=Thu, 19 Dec 1920 12:00:00 GMT;`
+          document.cookie = `${key}=;expires=Thu, 19 Dec 1920 12:00:00 GMT;path=/;`
           window.location = '/'
         }
       })
     },
 
     LOGOUT() {
-      document.cookie = `USERNAME=${COOKIE_APP_KEY.USERNAME};path=/;domain=bitmama-task.netlify.app;expires=Thu, 19 Dec 1920 12:00:00 GMT;`
+      document.cookie = `USERNAME=;expires=Thu, 19 Dec 1920 12:00:00 GMT;path=/;`
       window.location = '/'
 
       Swal.fire({

@@ -40,7 +40,7 @@
             <div class="form-group text-center">
               <button
                 class="form-control-submit-button"
-                @click="deleteSession(sessions[0], sessions[1])"
+                @click="deleteSession(sessions[0])"
               >
                 Logout session
               </button>
@@ -111,7 +111,7 @@ export default {
     }
 
     const logout = () => currentUser.LOGOUT()
-    const deleteSession = (key, value) => currentUser.DELETE_SESSION(key, value)
+    const deleteSession = (key) => currentUser.DELETE_SESSION(key)
 
     return { currentUser, deleteSession, logout, menuToggle }
   },
