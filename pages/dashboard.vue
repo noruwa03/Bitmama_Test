@@ -31,10 +31,6 @@
           class="col-sm-4 col-12 my-2"
         >
           <div class="customCard p-2">
-            <!-- <div class="row align-items-center justify-content-center">
-              <div class="col-sm-4 col-4">{{ sessions[0] }} :</div>
-              <div class="col-sm-4 col-4">{{ sessions[1] }}</div>
-            </div> -->
             <div class="card-header text-center">
               <span class="fw-bold h5">Key:</span> {{ sessions[0] }}
             </div>
